@@ -400,7 +400,7 @@
   }
 
 /* ===== V2 ENHANCEMENTS (client feedback 30 Jul): brand colours, readability,
-   imagery, slogan, guidelines, apply/pay ===== */
+   imagery, slogan, guidelines ===== */
 :root{ --green:#2E8B57; --green-2:#3FA372; --red:#C0392B; --red-2:#D9534F; --blue:#1B4F8A; }
 
 .brandbar{display:flex;height:4px;width:104px;border-radius:4px;overflow:hidden}
@@ -479,38 +479,12 @@
 .guide-cta h3{color:#fff;font-size:22px}
 .guide-cta p{color:rgba(233,240,250,.7);font-size:14.5px;margin-top:8px}
 
-/* Apply online + Payment (points 3,4) — styles kept from the demo; the final demo markup has no such cards */
-.apply{margin-top:56px;display:grid;grid-template-columns:1fr 1fr;gap:22px}
-.apply-card{border-radius:var(--r);padding:36px 34px;border:1px solid var(--line);position:relative;overflow:hidden}
-.apply-card.form{background:var(--ink);color:#fff;border-color:var(--ink)}
-.apply-card.pay{background:var(--white)}
-.apply-card .ac-ico{width:54px;height:54px;border-radius:14px;display:flex;align-items:center;justify-content:center;margin-bottom:22px}
-.apply-card.form .ac-ico{background:var(--gold);color:var(--ink)}
-.apply-card.pay .ac-ico{background:var(--green);color:#fff}
-.apply-card .ac-ico svg{width:26px;height:26px;stroke-width:1.7}
-.apply-card h3{font-size:25px;letter-spacing:-.01em}
-.apply-card.form h3{color:#fff}
-.apply-card p{margin-top:12px;font-size:15px;line-height:1.6}
-.apply-card.form p{color:rgba(233,240,250,.8)}
-.apply-card.pay p{color:var(--muted)}
-.apply-card .btn{margin-top:24px}
-.apply-card .cap-note{margin-top:14px;font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--muted-2)}
-.apply-card.form .cap-note{color:rgba(233,240,250,.5)}
-.apply-card.pay .paylogos{margin-top:20px;display:flex;gap:9px;align-items:center;flex-wrap:wrap;font-family:var(--mono);font-size:11px;color:var(--muted-2);letter-spacing:.05em}
-.apply-card.pay .paylogos span{border:1px solid var(--line);border-radius:6px;padding:5px 10px}
-.pay-note{margin-top:16px;display:none;align-items:flex-start;gap:9px;padding:13px 16px;border-radius:12px;background:rgba(46,139,87,.1);border:1px solid rgba(46,139,87,.3);color:#1f7a4d;font-size:13px}
-.pay-note.show{display:flex}
-.pay-note svg{width:17px;height:17px;flex-shrink:0;margin-top:1px}
-.btn-green{background:var(--green);color:#fff}
-.btn-green:hover{background:var(--green-2);transform:translateY(-2px)}
-
 /* footer slogan */
 .foot-slogan{font-family:var(--serif);font-style:italic;color:var(--gold-2);font-size:clamp(20px,2.4vw,26px);margin:4px 0 16px;line-height:1.2}
 
 @media (max-width:1000px){
   .tiles{grid-template-columns:repeat(2,1fr)}
   .guide-grid{grid-template-columns:repeat(2,1fr)}
-  .apply{grid-template-columns:1fr}
   .about-media{aspect-ratio:16/10}
 }
 @media (max-width:720px){

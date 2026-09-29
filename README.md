@@ -17,12 +17,12 @@ The site reproduces the supplied final demo (`nabslha-website-final.html`) and f
 | Topic | V2 prompt | Final demo (followed here) |
 |---|---|---|
 | Executive Committee | 5 members | **6 members**, including **Dr Ayanda Gina** (Marketing & PR Coordinator) |
-| "Apply for membership online" and "Pay your membership fee" cards | Present | Not in the markup (their styles are kept, unused) |
+| "Apply for membership online" and "Pay your membership fee" cards | Present | **Not included** (see below) |
 | Brand bar under the hero text | Present | Not in the markup (style kept, unused) |
-| Footer "Apply online" link | Present | Not present |
+| Footer "Apply online" link | Present | Not included (it went with the online application form) |
 | Copy details | e.g. "hearing-aid acousticians", short programme blurbs | Demo wording, e.g. "hearing aid acousticians", full programme descriptions |
 
-Each of these is quick to reverse if the V2 prompt is the intended version.
+**Confirmed decision:** the online membership application form and the payment gateway (PayFast) are no longer part of the website. The site has no cards or footer link for them, and the demo's leftover styles for them have been removed. Members join through the Register Interest form and the pre-filled membership email buttons.
 
 ## What changed relative to the demo
 
