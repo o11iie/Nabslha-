@@ -5,6 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>NABSLHA — National Black Speech, Language &amp; Hearing Association</title>
 <meta name="description" content="NABSLHA advances the leadership, development and representation of Black speech-language therapists and audiologists — championing equitable, culturally responsive hearing and communication care across South Africa." />
+<link rel="canonical" href="https://nabslha.org.za/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="NABSLHA — Every voice deserves to be heard" />
+<meta property="og:description" content="Advancing equitable communication and hearing care across South Africa. Explore NABSLHA membership, programmes and professional resources." />
+<meta property="og:url" content="https://nabslha.org.za/" />
+<meta property="og:image" content="https://nabslha.org.za/social-card.png" />
+<meta name="twitter:card" content="summary" />
+<meta name="theme-color" content="#0A1E3B" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 <script>document.documentElement.classList.add("js");</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -362,7 +371,6 @@
   .foot-bottom{margin-top:56px;padding-top:26px;border-top:1px solid rgba(255,255,255,.1);display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:center}
   .foot-bottom p{color:rgba(233,240,250,.45);font-size:12.5px;line-height:1.6}
   .foot-bottom .popia{max-width:520px}
-  .foot-bottom .demo{font-family:var(--mono);letter-spacing:.08em;color:rgba(233,197,107,.55);text-transform:uppercase;font-size:11px}
 
   /* REVEAL */
   .reveal{opacity:0;transform:translateY(22px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
@@ -531,6 +539,23 @@ html:not(.js) .form-msg:not(.show){display:none}
   .tiles{grid-template-columns:1fr}
 }
 
+
+/* Readable text keeps the original navy, ivory and gold identity. */
+.eyebrow,.pcard .tag,.tier .tname,.stat .num .u,table.compare .free{color:#806016}
+.value .vn{color:#5B6B82}
+.nav.scrolled .brand .wordmark span{color:#34445D}
+.pill.yes{color:#765611}
+.form-fine,.foot-bottom p,.foot-brand p{color:#B9C6D8}
+.foot-bottom>a{color:#C6D2E2;text-decoration:underline}
+.hz-strip .inner,.hz-strip .inner b,.hz-strip .inner .lbl{color:#B9C6D8}
+.field label{color:#C6D2E2}
+.field input::placeholder,.field textarea::placeholder{color:#A7B9D0}
+.field textarea{width:100%;border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.06);color:white;border-radius:10px;padding:13px 14px;font:inherit;resize:vertical}
+.field .consent{font-family:var(--sans);text-transform:none;letter-spacing:normal;font-size:13px;display:flex;gap:10px;align-items:flex-start;flex-wrap:wrap}
+.field .consent input{width:18px;height:18px;flex-shrink:0}
+.consent a,.form-fine a{text-decoration:underline}
+.btn:disabled{opacity:.65;cursor:wait}
+
 </style>
 </head>
 <body>
@@ -551,7 +576,7 @@ html:not(.js) .form-msg:not(.show){display:none}
       <a href="#membership" class="link">Membership</a>
       <a href="#guidelines" class="link">Guidelines</a>
     </nav>
-    <a href="mailto:info@nabslha.co.za?subject=Membership%20Enquiry%20%E2%80%94%20NABSLHA&amp;body=Hello%20NABSLHA%20team%2C%0D%0A%0D%0AI%20would%20like%20to%20become%20a%20member%20of%20the%20National%20Black%20Speech%2C%20Language%20and%20Hearing%20Association.%0D%0A%0D%0AFull%20name%3A%0D%0AMembership%20category%3A%0D%0AHPCSA%20number%20%28if%20applicable%29%3A%0D%0AContact%20number%3A%0D%0A%0D%0AThank%20you." class="btn btn-nav nav-cta">Become a member</a>
+    <a href="#join" class="btn btn-nav nav-cta">Become a member</a>
     <button class="hamburger" id="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span></span></button>
   </div>
 </header>
@@ -564,7 +589,7 @@ html:not(.js) .form-msg:not(.show){display:none}
   <a href="#leadership">Leadership</a>
   <a href="#membership">Membership</a>
   <a href="#guidelines">Professional Guidelines</a>
-  <a href="mailto:info@nabslha.co.za?subject=Membership%20Enquiry%20%E2%80%94%20NABSLHA&amp;body=Hello%20NABSLHA%20team%2C%0D%0A%0D%0AI%20would%20like%20to%20become%20a%20member%20of%20the%20National%20Black%20Speech%2C%20Language%20and%20Hearing%20Association.%0D%0A%0D%0AFull%20name%3A%0D%0AMembership%20category%3A%0D%0AHPCSA%20number%20%28if%20applicable%29%3A%0D%0AContact%20number%3A%0D%0A%0D%0AThank%20you." class="btn btn-gold">Become a member</a>
+  <a href="#join" class="btn btn-gold">Become a member</a>
 </nav>
 
 <main id="main">
@@ -584,7 +609,7 @@ html:not(.js) .form-msg:not(.show){display:none}
       <h1 class="reveal in">Every voice<br>deserves to be <span class="accent">heard.</span></h1>
       <p class="lede reveal in">The National Black Speech, Language and Hearing Association advances the leadership, development and representation of Black speech-language therapists and audiologists — championing equitable, culturally responsive hearing and communication care across South Africa.</p>
       <div class="hero-cta reveal in">
-        <a href="mailto:info@nabslha.co.za?subject=Membership%20Enquiry%20%E2%80%94%20NABSLHA&amp;body=Hello%20NABSLHA%20team%2C%0D%0A%0D%0AI%20would%20like%20to%20become%20a%20member%20of%20the%20National%20Black%20Speech%2C%20Language%20and%20Hearing%20Association.%0D%0A%0D%0AFull%20name%3A%0D%0AMembership%20category%3A%0D%0AHPCSA%20number%20%28if%20applicable%29%3A%0D%0AContact%20number%3A%0D%0A%0D%0AThank%20you." class="btn btn-gold">Become a member <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
+        <a href="#join" class="btn btn-gold">Become a member <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
         <a href="#mission" class="btn btn-light">Explore the association</a>
       </div>
     </div>
@@ -902,7 +927,7 @@ html:not(.js) .form-msg:not(.show){display:none}
           <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Educational webinars &amp; networking</li>
           <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Access to Special Interest Groups</li>
         </ul>
-        <a href="mailto:info@nabslha.co.za?subject=Membership%20Enquiry%20%E2%80%94%20Student%20Membership&amp;body=Hello%20NABSLHA%20team%2C%0D%0A%0D%0AI%20would%20like%20to%20apply%20for%20Student%20membership%20of%20NABSLHA.%0D%0A%0D%0AFull%20name%3A%0D%0AHPCSA%20number%20%28if%20applicable%29%3A%0D%0AContact%20number%3A%0D%0A%0D%0AThank%20you." class="btn btn-ghost">Join free</a>
+        <a href="#join" class="btn btn-ghost">Join free</a>
       </div>
 
       <div class="tier featured reveal d2">
@@ -917,7 +942,7 @@ html:not(.js) .form-msg:not(.show){display:none}
           <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Awards, leadership &amp; research opportunities</li>
           <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Advocacy &amp; professional representation</li>
         </ul>
-        <a href="mailto:info@nabslha.co.za?subject=Membership%20Enquiry%20%E2%80%94%20Professional%20Membership&amp;body=Hello%20NABSLHA%20team%2C%0D%0A%0D%0AI%20would%20like%20to%20apply%20for%20Professional%20membership%20of%20NABSLHA.%0D%0A%0D%0AFull%20name%3A%0D%0AHPCSA%20number%20%28if%20applicable%29%3A%0D%0AContact%20number%3A%0D%0A%0D%0AThank%20you." class="btn btn-gold">Become a member</a>
+        <a href="#join" class="btn btn-gold">Become a member</a>
       </div>
 
       <div class="tier reveal d3">
@@ -930,7 +955,7 @@ html:not(.js) .form-msg:not(.show){display:none}
           <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>CPD webinars &amp; reduced conference fees</li>
           <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Committees &amp; Special Interest Groups</li>
         </ul>
-        <a href="mailto:info@nabslha.co.za?subject=Membership%20Enquiry%20%E2%80%94%20Community%20Service%20Membership&amp;body=Hello%20NABSLHA%20team%2C%0D%0A%0D%0AI%20would%20like%20to%20apply%20for%20Community%20Service%20membership%20of%20NABSLHA.%0D%0A%0D%0AFull%20name%3A%0D%0AHPCSA%20number%20%28if%20applicable%29%3A%0D%0AContact%20number%3A%0D%0A%0D%0AThank%20you." class="btn btn-ghost">Apply now</a>
+        <a href="#join" class="btn btn-ghost">Apply now</a>
       </div>
     </div>
 
@@ -970,10 +995,12 @@ html:not(.js) .form-msg:not(.show){display:none}
       <p class="j-sub reveal d2">Register your interest and a member of our team will guide you through joining NABSLHA — the professional home for Black speech, language and hearing professionals in South Africa.</p>
     </div>
     <div class="form-card reveal d2">
-      <form id="joinForm" novalidate>
+      <form id="joinForm" name="membership-interest" method="POST" action="/thank-you" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="membership-interest" />
+        <p hidden><label>Leave this empty: <input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
         <div class="field">
           <label for="name">Full name</label>
-          <input type="text" id="name" name="name" placeholder="Dr Thandi Nkosi" autocomplete="name" required />
+          <input type="text" id="name" name="name" placeholder="Your full name" autocomplete="name" required />
         </div>
         <div class="field">
           <label for="email">Email address</label>
@@ -998,12 +1025,17 @@ html:not(.js) .form-msg:not(.show){display:none}
             <input type="text" id="hpcsa" name="hpcsa" placeholder="e.g. ST 0000000" />
           </div>
         </div>
+        <div class="field">
+          <label for="enquiry">How can we help? <span style="text-transform:none;letter-spacing:0">(optional)</span></label>
+          <textarea id="enquiry" name="enquiry" rows="3" maxlength="3000" placeholder="Membership, renewal, partnership or another enquiry"></textarea>
+        </div>
+        <div class="field"><label class="consent"><input type="checkbox" name="consent" value="yes" required /> I agree that NABSLHA may use these details to respond to my enquiry. <a href="/privacy">Read the privacy notice.</a></label></div>
         <button type="submit" class="btn btn-gold">Register my interest <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
         <div class="form-msg" id="formMsg" role="status">
           <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
-          <span>Thank you — your interest has been registered. Our team will be in touch soon.</span>
+          <span>Thank you — your enquiry has been received for the NABSLHA team to review.</span>
         </div>
-        <p class="form-fine">Demonstration form — no data is submitted or stored.</p>
+        <p class="form-fine">Your details are submitted securely to help NABSLHA respond to your enquiry.</p>
       </form>
     </div>
   </div>
@@ -1034,12 +1066,12 @@ html:not(.js) .form-msg:not(.show){display:none}
         <h2>Membership</h2>
         <a href="#membership">Categories &amp; fees</a>
         <a href="#join">Become a member</a>
-        <a href="#membership">Renew membership</a>
+        <a href="#join">Enquire about renewal</a>
         <a href="#programmes">CPD &amp; events</a>
       </div>
       <div class="foot-col">
         <h2>Connect</h2>
-        <a href="#join">info@nabslha.co.za</a>
+        <a href="#join">Send an enquiry</a>
         <a href="#join">Partner with us</a>
         <a href="#join">Corporate membership</a>
         <a href="#top">Back to top ↑</a>
@@ -1047,7 +1079,7 @@ html:not(.js) .form-msg:not(.show){display:none}
     </div>
     <div class="foot-bottom">
       <p class="popia">© 2026 National Black Speech, Language and Hearing Association. NABSLHA operates in accordance with the Nonprofit Organisations Act and processes personal information in accordance with POPIA.</p>
-      <p class="demo">Demonstration website</p>
+      <a href="/privacy">Privacy notice</a>
     </div>
   </div>
 </footer>
@@ -1065,7 +1097,6 @@ html:not(.js) .form-msg:not(.show){display:none}
 (function(){
   "use strict";
   var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var inFrame = false; try { inFrame = window.self !== window.top; } catch (e) { inFrame = true; }
 
   /* ---------- NAV scroll state ---------- */
   var nav = document.getElementById("nav");
@@ -1116,9 +1147,6 @@ html:not(.js) .form-msg:not(.show){display:none}
       if(document.body.classList.contains("menu-open")) toggleMenu(false);
       goTo(target);
       try { history.replaceState(null, "", href); } catch(e){}
-    } else if(href.indexOf("mailto:") === 0 && inFrame){
-      var join = document.getElementById("join");
-      if(join){ ev.preventDefault(); if(document.body.classList.contains("menu-open")) toggleMenu(false); goTo(join); }
     }
   });
 
@@ -1183,28 +1211,35 @@ html:not(.js) .form-msg:not(.show){display:none}
   var form = document.getElementById("joinForm");
   var msg = document.getElementById("formMsg");
   if(form){
-    // the status region exists from load; filling it on success is what gets announced
-    var msgText = msg.querySelector("span"), thanks = msgText.textContent;
+    var msgText = msg.querySelector("span");
     msgText.textContent = "";
-    form.addEventListener("submit", function(e){
+    form.addEventListener("submit", async function(e){
       e.preventDefault();
-      var name = document.getElementById("name");
-      var email = document.getElementById("email");
-      var cat = document.getElementById("category");
-      var invalid = [];
-      [name,email,cat].forEach(function(f){
-        if(!f.value || (f.type==="email" && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(f.value))){
-          f.style.borderColor = "#E07a63"; f.setAttribute("aria-invalid", "true"); invalid.push(f);
-        } else { f.style.borderColor = ""; f.removeAttribute("aria-invalid"); }
-      });
-      if(invalid.length){ invalid[0].focus(); return; }
-      msg.classList.add("show");
-      msgText.textContent = thanks;
-      form.querySelector('button[type="submit"]').textContent = "Interest registered ✓";
-      setTimeout(function(){ form.reset(); }, 400);
-    });
-    form.querySelectorAll("input,select").forEach(function(f){
-      f.addEventListener("input", function(){ f.style.borderColor=""; f.removeAttribute("aria-invalid"); });
+      if(!form.reportValidity()) return;
+      var button = form.querySelector('button[type="submit"]');
+      var original = button.innerHTML;
+      if(button.disabled) return;
+      button.disabled = true;
+      button.textContent = "Sending enquiry…";
+      form.setAttribute("aria-busy", "true");
+      msg.classList.remove("show");
+      try {
+        var response = await fetch("/", {
+          method: "POST",
+          headers: {"Content-Type": "application/x-www-form-urlencoded"},
+          body: new URLSearchParams(new FormData(form)).toString()
+        });
+        if(!response.ok) throw new Error("Submission rejected");
+        msgText.textContent = "Thank you — your enquiry has been received for the NABSLHA team to review.";
+        form.reset();
+      } catch(error) {
+        msgText.textContent = "Your enquiry could not be sent. Your details are still here. Please try again shortly.";
+      } finally {
+        msg.classList.add("show");
+        button.disabled = false;
+        button.innerHTML = original;
+        form.removeAttribute("aria-busy");
+      }
     });
   }
 
