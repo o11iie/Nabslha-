@@ -1,0 +1,5 @@
+# Local Netlify state; retain the form activation marker for deployment.
+.netlify/*
+!.netlify/features/
+.netlify/features/*
+!.netlify/features/netlify-forms

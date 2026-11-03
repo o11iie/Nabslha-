@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nabslha.org.za/sitemap.xml

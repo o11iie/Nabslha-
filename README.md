@@ -3,7 +3,7 @@
 Single-page website for **NABSLHA — National Black Speech, Language & Hearing Association**:
 *"Every voice deserves to be heard."*
 
-The whole site is one self-contained file, [`index.html`](index.html). All CSS and JavaScript are inline, Three.js r128 (for the 3D "voice halo" in the hero) is inlined, and the NABSLHA logo is embedded. There is no build step, no framework and no backend. The only external request is for the Google Fonts stylesheet (Fraunces, Inter, Space Mono), and every font has a system fallback.
+The whole site is one self-contained file, [`index.html`](index.html). All CSS and JavaScript are inline, Three.js r128 (for the 3D "voice halo" in the hero) is inlined, and the NABSLHA logo is embedded. There is no build step or framework. Enquiries are collected with Netlify Forms. The only external request is for the Google Fonts stylesheet (Fraunces, Inter, Space Mono), and every font has a system fallback.
 
 ## Viewing and deploying
 
@@ -22,7 +22,7 @@ The site reproduces the supplied final demo (`nabslha-website-final.html`) and f
 | Footer "Apply online" link | Present | Not included (it went with the online application form) |
 | Copy details | e.g. "hearing-aid acousticians", short programme blurbs | Demo wording, e.g. "hearing aid acousticians", full programme descriptions |
 
-**Confirmed decision:** the online membership application form and the payment gateway (PayFast) are no longer part of the website. The site has no cards or footer link for them, and the demo's leftover styles for them have been removed. Members join through the Register Interest form and the pre-filled membership email buttons.
+**Confirmed decision:** the online membership application form and the payment gateway (PayFast) are no longer part of the website. The site has no cards or footer link for them, and the demo's leftover styles for them have been removed. Membership buttons lead to the enquiry form. The form collects interest and renewal enquiries; it does not complete membership registration or payment.
 
 ## What changed relative to the demo
 
@@ -43,14 +43,19 @@ Section by section, the build is pixel-identical to the demo at 1440, 1000, 768 
 - The closed mobile menu is out of the tab order. When open, the page behind it is inert, Escape closes it, and it closes itself if the window widens past 720 px.
 - In-page links move keyboard focus to their target. The active nav link is correct in both scroll directions and clears at the hero.
 - Biographies are hidden from assistive technology while collapsed and animate to their measured height, so long ones are never clipped.
-- The form flags invalid fields with `aria-invalid`, focuses the first one, and announces success through its `role="status"` region.
+- The form uses native required-field and email validation and announces submission results through its `role="status"` region.
 - The 3D loop pauses off-screen and in hidden tabs, including the demo case where it restarted off-screen after a tab switch. It resumes without jumping. If the GPU context is lost, the static SVG fallback shows.
 - Without JavaScript, all content stays visible. There are Safari prefixes for `backdrop-filter`, `vh` fallbacks for `svh`, and a proper table header structure.
 
-## Known limitations (from the design)
+## Production enquiries and deployment
 
-- **Brand-gold text on light backgrounds** is below WCAG AA contrast: eyebrows, programme tags and tier names are about 2.3–2.6:1. So are the grey value numbers (3.3:1) and some footer fine print (about 4:1). These are palette choices, so they were not changed. A darker gold for small text on ivory (e.g. `#8A6A1E`, which the demo already uses for "Yes" pills) would fix them.
-- **Demo-only behaviour, as specified:** the Register Interest form submits nothing. Membership buttons open a pre-filled `mailto:` to `info@nabslha.co.za`. Inside an iframe preview they scroll to the form instead.
+The static `membership-interest` form uses Netlify Forms, a honeypot and required consent. JavaScript shows a sending state and displays success only after an accepted HTTP response; failures preserve entered details for retry. Without JavaScript, native form submission leads to `/thank-you`. Submissions are reviewed in the Netlify site's Forms area, including the spam folder. No email notification recipient has been configured or verified by this update.
+
+The form activation marker enables detection through the deployment workflow. A manual deploy must also have form detection enabled on the site. Deploy the static files without a build command. Confirm that `membership-interest` appears in Forms after deploying.
+
+All membership calls to action use the form instead of requiring a mail application. The footer routes enquiries to the form instead of relying on an unverified mailbox. The privacy notice describes what the enquiry form collects and how visitors can request access, correction or deletion.
+
+The palette keeps gold for decoration and uses darker gold for small text on light surfaces. Search files, canonical metadata and a PNG social sharing image target `https://nabslha.org.za/`. Both the apex domain and `www` must point to Netlify and have valid HTTPS before that custom domain can serve the site.
 
 ## Editing notes
 
